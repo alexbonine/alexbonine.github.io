@@ -54,9 +54,12 @@ function introScroll () {
     var scrollDiff = document.body.scrollTop - halfHeight;
     introBlocks[0].style.opacity = 0;
     introBlocks[1].style.opacity = scrollDiff / diff;
-  } else {
+  } else if (document.body.scrollTop <= windowHeight * 2) {
     introBlocks[0].style.opacity = 0;
     introBlocks[1].style.opacity = 1;
+  } else {
+    introBlocks[0].style.opacity = 0;
+    introBlocks[1].style.opacity = 0;
   }
 }
 

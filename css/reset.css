@@ -29,10 +29,14 @@ li {
 
 a {
   text-decoration: none;
-  color: palegoldenrod;
+  color: #FFFFFF;
 }
 
 a:hover {
-  color: palegoldenrod;
+  color: #FFFFFF;
   cursor: pointer;
+}
+
+h1 {
+  margin: 0;
 }

@@ -6,6 +6,7 @@
   <meta name='author' content='Alex Bonine'>
   <meta name='robots' content='index, follow'>
   <link rel='stylesheet' type='text/css' href='css/reset.css'>
+  <link rel='stylesheet' type='text/css' href='css/zoom.css'>
   <link rel='stylesheet' type='text/css' href='css/styles.css'>
 </head>
 <body>
@@ -25,20 +26,66 @@
       <div class='intro__block intro__block--default'><h1>Carousel</h1></div>
       <div class='intro__block'><h1>Me</h1></div>
     </section>
-    <section id='campaigns' class='work'>
-      <h1>Campaigns</h1>
-    </section>
-    <section id='extensions' class='work'>
-      <h1>Gmail &amp; Outlook</h1>
-    </section>
-    <section id='mobile' class='work'>
-      <h1>CoyoteGO and mobile lead role</h1>
-    </section>
-    <section id='coyoteweb' class='work'>
-      <h1>Coyote.com?</h1>
-    </section>
-    <section id='defense' class='work'>
-      <h1>Rockwell Collins experience</h1>
+    <section class='projects'>
+      <div class='projects__title'>
+        <h1 class='projects__title__header'>Projects</h1>
+      </div>
+      <article id='campaigns' class='work'>
+        <h1 class='work__header'>Campaigns</h1>
+        <div class='work__image-container'>
+          <img class='work__image' src='images/ARC-210_Gen_5_1.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_2.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_3.jpg' data-action='zoom' />
+        </div>
+        <div class='work__text-container'>
+          <p class='work__text'>Text</p>
+        </div>
+      </article>
+      <article id='extensions' class='work'>
+        <h1 class='work__header'>Gmail &amp; Outlook</h1>
+        <div class='work__image-container'>
+          <img class='work__image' src='images/ARC-210_Gen_5_1.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_2.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_3.jpg' data-action='zoom' />
+        </div>
+        <div class='work__text-container'>
+          <p class='work__text'>Text</p>
+        </div>
+      </article>
+      <article id='mobile' class='work'>
+        <h1 class='work__header'>CoyoteGO and mobile lead role</h1>
+        <div class='work__image-container'>
+          <img class='work__image' src='images/ARC-210_Gen_5_1.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_2.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_3.jpg' data-action='zoom' />
+        </div>
+        <div class='work__text-container'>
+          <p class='work__text'>Text</p>
+        </div>
+      </article>
+      <article id='coyoteweb' class='work'>
+        <h1 class='work__header'>Coyote.com?</h1>
+        <div class='work__image-container'>
+          <img class='work__image' src='https://placebear.com/200/300' data-action='zoom' />
+          <img class='work__image' src='https://placebear.com/400/200' data-action='zoom' />
+          <img class='work__image' src='https://placebear.com/200/300' data-action='zoom' />
+          <img class='work__image' src='https://placebear.com/300/200' data-action='zoom' />
+        </div>
+        <div class='work__text-container'>
+          <p class='work__text'>Text</p>
+        </div>
+      </article>
+      <article id='defense' class='work'>
+        <h1 class='work__header'>Rockwell Collins experience</h1>
+        <div class='work__image-container'>
+          <img class='work__image' src='images/ARC-210_Gen_5_1.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_2.jpg' data-action='zoom' />
+          <img class='work__image hide' src='images/ARC-210_Gen_5_3.jpg' data-action='zoom' />
+        </div>
+        <div class='work__text-container'>
+          <p class='work__text'>Text</p>
+        </div>
+      </article>
     </section>
   </main>
   <footer>
@@ -65,6 +112,7 @@
       <h3>Contact</h3>
     </div>
   </section>
+  <script type='text/javascript' src='js/zoom.min.js'></script>
   <script type='text/javascript' src='js/app.js'></script>
 </body>
 </html>
