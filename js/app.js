@@ -79,7 +79,7 @@ function scrolling () {
   menuItems[menuItems.length - 1].addEventListener('click', menuItemCloseClick);
 
   var workItems = document.getElementsByClassName('quickhop__work__link');
-  for (var i = 0; i < workItems.length - 1; i++) {
+  for (var i = 0; i < workItems.length; i++) {
     workItems[i].addEventListener('click', menuItemCloseClick);
   }
 })();

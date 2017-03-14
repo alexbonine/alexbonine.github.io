@@ -1,0 +1,24 @@
+{
+  "name": "alexbonine.github.io",
+  "version": "1.0.0",
+  "description": "Alex Bonine Portfolio Page",
+  "main": "index.js",
+  "scripts": {
+    "build:zoom": "cd ../zoom.js && make && cd ../alexbonine.github.io && cp ../zoom.js/css/zoom.css ./css && cp -a ../zoom.js/dist/. ./js/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexbonine/alexbonine.github.io.git"
+  },
+  "keywords": [
+    "alexbonine",
+    "bonine",
+    "vanillajs"
+  ],
+  "author": "Alex Bonine",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alexbonine/alexbonine.github.io/issues"
+  },
+  "homepage": "https://github.com/alexbonine/alexbonine.github.io"
+}
