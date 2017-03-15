@@ -25,6 +25,7 @@
   -moz-transition: all 330ms ease-in-out;
   -webkit-transition: all 330ms ease-in-out;
   -o-transition: all 330ms ease-in-out;
+  -ms-transition: all 330ms ease-in-out;
   transition: all 330ms ease-in-out;
 }
 
@@ -83,6 +84,7 @@
   -moz-transition: all 400ms ease;
   -webkit-transition: all 400ms ease;
   -o-transition: all 400ms ease;
+  -ms-transition: all 400ms ease;
   transition: all 400ms ease;
 }
 
@@ -96,15 +98,23 @@
   color: #FFFFFF;
   height: 175vh;
   width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .intro__block {
   position: fixed;
   top: 50%;
-  width: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 1200px;
   height: 250px;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
+  align-items: center;
   opacity: 0;
 }
 
@@ -112,9 +122,18 @@
   opacity: 1;
 }
 
+.intro__block__link {
+  // text-decoration: underline;
+}
+
+.intro__block__text {
+
+}
+
 .projects {
   position: inherit; // relative breaks zoom.js
   z-index: 2;
+  background-color: #FFFFFF;
 }
 
 .projects__title {

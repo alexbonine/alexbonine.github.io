@@ -1,25 +1,25 @@
-function menuItemDefaultClick (e) {
+function quickhopOpenClick (e) {
   var menuItemsDefault = document.getElementsByClassName('menu__item--default');
   for (var i = 0; i < menuItemsDefault.length; i++) {
-    menuItemsDefault[i].className += ' menu__item--hide';
+    menuItemsDefault[i].classList.add('menu__item--hide');
   }
   var menuItemClose = document.getElementsByClassName('menu__item--close')[0];
-  menuItemClose.className = menuItemClose.className.replace(' menu__item--hide', '');
+  menuItemClose.classList.remove('menu__item--hide')
 
   var quickhop = document.getElementById(e.currentTarget.dataset.item);
-  quickhop.className += ' quickhop--show';
+  quickhop.classList.add('quickhop--show');
 }
 
-function menuItemCloseClick (e) {
+function quickhopCloseClick (e) {
   var menuItemsDefault = document.getElementsByClassName('menu__item--default');
   for (var i = 0; i < menuItemsDefault.length; i++) {
-    menuItemsDefault[i].className = menuItemsDefault[i].className.replace(' menu__item--hide', '');
+    menuItemsDefault[i].classList.remove('menu__item--hide');
   }
   var menuItemClose = document.getElementsByClassName('menu__item--close')[0];
-  menuItemClose.className += ' menu__item--hide';
+  menuItemClose.classList.add('menu__item--hide');
 
   var quickhop = document.getElementsByClassName('quickhop--show')[0];
-  quickhop.className = quickhop.className.replace(' quickhop--show', '');
+  quickhop.classList.remove('quickhop--show');
 }
 
 function headerScroll () {
@@ -27,10 +27,10 @@ function headerScroll () {
   
   if (document.body.scrollTop > 40 && scrolled.length === 0) {
     var header = document.getElementsByTagName('header')[0];
-    header.className += ' scrolled';
+    header.classList.add('scrolled');
   } else if (document.body.scrollTop <= 40 && scrolled.length === 1) {
     var header = document.getElementsByTagName('header')[0];
-    header.className = header.className.replace(' scrolled', '');
+    header.classList.remove('scrolled');
   }
 }
 
@@ -72,14 +72,18 @@ function scrolling () {
   document.addEventListener('scroll', scrolling);
 
   // onClickListeners
-  var menuItems = document.getElementsByClassName('menu__item__link');
-  for (var i = 0; i < menuItems.length - 1; i++) {
-    menuItems[i].addEventListener('click', menuItemDefaultClick);
+  var menuItems = document.getElementsByClassName('quickhop__link');
+  for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click', quickhopOpenClick);
   }
-  menuItems[menuItems.length - 1].addEventListener('click', menuItemCloseClick);
+
+  var closeButton = document.querySelector('[data-item="close"]');
+  if (closeButton) {
+    closeButton.addEventListener('click', quickhopCloseClick);
+  }
 
   var workItems = document.getElementsByClassName('quickhop__work__link');
   for (var i = 0; i < workItems.length; i++) {
-    workItems[i].addEventListener('click', menuItemCloseClick);
+    workItems[i].addEventListener('click', quickhopCloseClick);
   }
 })();
