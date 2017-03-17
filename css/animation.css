@@ -1,0 +1,205 @@
+/* Slide right */
+@-moz-keyframes cyclerightone {
+  0% { left: 0; }
+  20% { left: 0; opacity: 1; }
+  25% { left: 40vw; opacity: 0; z-index: 0; }
+  26% { left: -40vw; z-index: -1 }
+  95% { left: -40vw; z-index: 0 }
+  100% { left: 0; opacity: 1 }
+}
+@-moz-keyframes cyclerighttwo {
+  0% { left: -40vw; opacity: 0; }
+  20% { left: -40vw; opacity: 0; z-index: 0 }
+  25% { left: 0; opacity: 1; }
+  45% { left: 0; opacity: 1; }
+  50% { left: 40vw; opacity: 0; z-index: 0; }
+  51% { left: -40vw; z-index: -1 }
+  100% { left: -40vw; }
+}
+@-moz-keyframes cyclerightthree {
+  0% { left: -40vw; opacity: 0; }
+  45% { left: -40vw; opacity: 0; z-index: 0 }
+  50% { left: 0; opacity: 1; }
+  70% { left: 0; opacity: 1; }
+  75% { left: 40vw; opacity: 0; z-index: 0; }
+  76% { left: -40vw; z-index: -1 }
+  100% { left: -40vw; }
+}
+@-moz-keyframes cyclerightfour {
+  0% { left: -40vw; opacity: 0; }
+  70% { left: -40vw; opacity: 0; z-index: 0 }
+  75% { left: 0; opacity: 1; }
+  95% { left: 0; opacity: 1; }
+  100% { left: 40vw; opacity: 0; z-index: 0; }
+}
+
+@-webkit-keyframes cyclerightone {
+  0% { left: 0; }
+  20% { left: 0; opacity: 1; }
+  25% { left: 40vw; opacity: 0; z-index: 0; }
+  26% { left: -40vw; z-index: -1 }
+  95% { left: -40vw; z-index: 0 }
+  100% { left: 0; opacity: 1 }
+}
+@-webkit-keyframes cyclerighttwo {
+  0% { left: -40vw; opacity: 0; }
+  20% { left: -40vw; opacity: 0; z-index: 0 }
+  25% { left: 0; opacity: 1; }
+  45% { left: 0; opacity: 1; }
+  50% { left: 40vw; opacity: 0; z-index: 0; }
+  51% { left: -40vw; z-index: -1 }
+  100% { left: -40vw; }
+}
+@-webkit-keyframes cyclerightthree {
+  0% { left: -40vw; opacity: 0; }
+  45% { left: -40vw; opacity: 0; z-index: 0 }
+  50% { left: 0; opacity: 1; }
+  70% { left: 0; opacity: 1; }
+  75% { left: 40vw; opacity: 0; z-index: 0; }
+  76% { left: -40vw; z-index: -1 }
+  100% { left: -40vw; }
+}
+@-webkit-keyframes cyclerightfour {
+  0% { left: -40vw; opacity: 0; }
+  70% { left: -40vw; opacity: 0; z-index: 0 }
+  75% { left: 0; opacity: 1; }
+  95% { left: 0; opacity: 1; }
+  100% { left: 40vw; opacity: 0; z-index: 0; }
+}
+
+@keyframes cyclerightone {
+  0% { left: 0; }
+  20% { left: 0; opacity: 1; }
+  25% { left: 40vw; opacity: 0; z-index: 0; }
+  26% { left: -40vw; z-index: -1 }
+  95% { left: -40vw; z-index: 0 }
+  100% { left: 0; opacity: 1 }
+}
+@keyframes cyclerighttwo {
+  0% { left: -40vw; opacity: 0; }
+  20% { left: -40vw; opacity: 0; z-index: 0 }
+  25% { left: 0; opacity: 1; }
+  45% { left: 0; opacity: 1; }
+  50% { left: 40vw; opacity: 0; z-index: 0; }
+  51% { left: -40vw; z-index: -1 }
+  100% { left: -40vw; }
+}
+@keyframes cyclerightthree {
+  0% { left: -40vw; opacity: 0; }
+  45% { left: -40vw; opacity: 0; z-index: 0 }
+  50% { left: 0; opacity: 1; }
+  70% { left: 0; opacity: 1; }
+  75% { left: 40vw; opacity: 0; z-index: 0; }
+  76% { left: -40vw; z-index: -1 }
+  100% { left: -40vw; }
+}
+@keyframes cyclerightfour {
+  0% { left: -40vw; opacity: 0; }
+  70% { left: -40vw; opacity: 0; z-index: 0 }
+  75% { left: 0; opacity: 1; }
+  95% { left: 0; opacity: 1; }
+  100% { left: 40vw; opacity: 0; z-index: 0; }
+}
+
+/* Slide left */
+@-moz-keyframes cycleleftone {
+  0% { right: 0; }
+  20% { right: 0; opacity: 1; }
+  25% { right: 50vw; opacity: 0; z-index: 0; }
+  26% { right: -50vw; z-index: -1 }
+  95% { right: -50vw; z-index: 0 }
+  100% { right: 0; opacity: 1 }
+}
+@-moz-keyframes cyclelefttwo {
+  0% { right: -50vw; opacity: 0; }
+  20% { right: -50vw; opacity: 0; z-index: 0 }
+  25% { right: 0; opacity: 1; }
+  45% { right: 0; opacity: 1; }
+  50% { right: 50vw; opacity: 0; z-index: 0; }
+  51% { right: -50vw; z-index: -1 }
+  100% { right: -50vw; }
+}
+@-moz-keyframes cycleleftthree {
+  0% { right: -50vw; opacity: 0; }
+  45% { right: -50vw; opacity: 0; z-index: 0 }
+  50% { right: 0; opacity: 1; }
+  70% { right: 0; opacity: 1; }
+  75% { right: 50vw; opacity: 0; z-index: 0; }
+  76% { right: -50vw; z-index: -1 }
+  100% { right: -50vw; }
+}
+@-moz-keyframes cycleleftfour {
+  0% { right: -50vw; opacity: 0; }
+  70% { right: -50vw; opacity: 0; z-index: 0 }
+  75% { right: 0; opacity: 1; }
+  95% { right: 0; opacity: 1; }
+  100% { right: 50vw; opacity: 0; z-index: 0; }
+}
+
+@-webkit-keyframes cycleleftone {
+  0% { right: 0; }
+  20% { right: 0; opacity: 1; }
+  25% { right: 50vw; opacity: 0; z-index: 0; }
+  26% { right: -50vw; z-index: -1 }
+  95% { right: -50vw; z-index: 0 }
+  100% { right: 0; opacity: 1 }
+}
+@-webkit-keyframes cyclelefttwo {
+  0% { right: -50vw; opacity: 0; }
+  20% { right: -50vw; opacity: 0; z-index: 0 }
+  25% { right: 0; opacity: 1; }
+  45% { right: 0; opacity: 1; }
+  50% { right: 50vw; opacity: 0; z-index: 0; }
+  51% { right: -50vw; z-index: -1 }
+  100% { right: -50vw; }
+}
+@-webkit-keyframes cycleleftthree {
+  0% { right: -50vw; opacity: 0; }
+  45% { right: -50vw; opacity: 0; z-index: 0 }
+  50% { right: 0; opacity: 1; }
+  70% { right: 0; opacity: 1; }
+  75% { right: 50vw; opacity: 0; z-index: 0; }
+  76% { right: -50vw; z-index: -1 }
+  100% { right: -50vw; }
+}
+@-webkit-keyframes cycleleftfour {
+  0% { right: -50vw; opacity: 0; }
+  70% { right: -50vw; opacity: 0; z-index: 0 }
+  75% { right: 0; opacity: 1; }
+  95% { right: 0; opacity: 1; }
+  100% { right: 50vw; opacity: 0; z-index: 0; }
+}
+
+@keyframes cycleleftone {
+  0% { right: 0; }
+  20% { right: 0; opacity: 1; }
+  25% { right: 50vw; opacity: 0; z-index: 0; }
+  26% { right: -50vw; z-index: -1 }
+  95% { right: -50vw; z-index: 0 }
+  100% { right: 0; opacity: 1 }
+}
+@keyframes cyclelefttwo {
+  0% { right: -50vw; opacity: 0; }
+  20% { right: -50vw; opacity: 0; z-index: 0 }
+  25% { right: 0; opacity: 1; }
+  45% { right: 0; opacity: 1; }
+  50% { right: 50vw; opacity: 0; z-index: 0; }
+  51% { right: -50vw; z-index: -1 }
+  100% { right: -50vw; }
+}
+@keyframes cycleleftthree {
+  0% { right: -50vw; opacity: 0; }
+  45% { right: -50vw; opacity: 0; z-index: 0 }
+  50% { right: 0; opacity: 1; }
+  70% { right: 0; opacity: 1; }
+  75% { right: 50vw; opacity: 0; z-index: 0; }
+  76% { right: -50vw; z-index: -1 }
+  100% { right: -50vw; }
+}
+@keyframes cycleleftfour {
+  0% { right: -50vw; opacity: 0; }
+  70% { right: -50vw; opacity: 0; z-index: 0 }
+  75% { right: 0; opacity: 1; }
+  95% { right: 0; opacity: 1; }
+  100% { right: 50vw; opacity: 0; z-index: 0; }
+}

@@ -8,6 +8,7 @@
   <meta name='viewport' content='width=device-width'>
   <link rel='stylesheet' type='text/css' href='css/reset.css'>
   <link rel='stylesheet' type='text/css' href='css/zoom.css'>
+  <link rel='stylesheet' type='text/css' href='css/animation.css'>
   <link rel='stylesheet' type='text/css' href='css/styles.css'>
 </head>
 <body>
@@ -24,11 +25,71 @@
   </header>
   <main>
     <section class='intro'>
-      <div class='intro__block intro__block--default'><h1>Carousel</h1></div>
+      <div class='intro__block intro__block--default'>
+        <div class='wording'>
+          <h4 class='wording__text'>Hello! I'm <strong>Alex Bonine</strong>, a <strong>Front-End Web Developer</strong> with over a <strong>decade of experience</strong> in software. I started on TI-86 calculators, went pro writing satellite communications at <strong>Rockwell Collins</strong> before leading the mobile team at <strong>Coyote Logisitcs</strong>. Now I lead the front-end at <strong>ToutApp</strong>, rewriting the entire stack to use <strong>React</strong> and a <strong>UI component libary</strong>. I am based in San Francisco after years in the Midwest and East Coast and enjoy the wandering the city when the marine layer allows and the world when time allows.</h4>
+          <h4 class='wording__text'>Find out more <a href='#about' class='intro__block__link quickhop__link' data-item='about'><strong>about me</strong></a>.</h4>
+        </div>
+        <!-- <div class='carousel reverse'>
+          <div class='carousel__mask'>
+            <ul class='carousel__list'>
+              <li class='carousel__list__item firstanimation'>
+                <div class='carousel__div'><img class='carousel__img' src='images/temp-linkedinprofile.jpg' /></div>
+              </li>
+              <li class='carousel__list__item secondanimation'>
+                <div class='carousel__div'><img class='carousel__img' src='images/toutweb/command-center-search.png' /></div>
+              </li>
+              <li class='carousel__list__item thirdanimation'>
+                <div class='carousel__div'><img class='carousel__img' src='images/toutweb/command-center-search.png' /></div>
+              </li>
+              <li class='carousel__list__item fourthanimation'>
+                <div class='carousel__div'><img class='carousel__img' src='images/toutweb/command-center-search.png' /></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='carousel'>
+          <div class='carousel__mask'>
+            <ul class='carousel__list'>
+              <li class='carousel__list__item firstanimation'>
+                <div class='carousel__div'><h1>Alex Bonine</h1></div>
+              </li>
+              <li class='carousel__list__item secondanimation'>
+                <div class='carousel__div'><h1>Front-End Developer</h1></div>
+              </li>
+              <li class='carousel__list__item thirdanimation'>
+                <div class='carousel__div'><h1>Experienced</h1></div>
+              </li>
+              <li class='carousel__list__item fourthanimation'>
+                <div class='carousel__div'><h1>World Traveler</h1></div>
+              </li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
       <div class='intro__block'>
-        <div>
-          <h4 class='intro__block__text'>Hello! I'm <strong>Alex Bonine</strong>, a <strong>Front-End Web Developer</strong> with over a <strong>decade of experience</strong> in software. I started on TI-86 calculators, went pro writing satellite communications at <strong>Rockwell Collins</strong> before leading the mobile team at <strong>Coyote Logisitcs</strong>. Now I lead the front-end at <strong>ToutApp</strong>, rewriting the entire stack to use <strong>React</strong> and a <strong>UI component libary</strong>. I am based in San Francisco after years in the Midwest and East Coast and enjoying life when the marine layer allows.</h4>
-          <h4 class='intro__block__text'>Find out more <a href='#about' class='intro__block__link quickhop__link' data-item='about'><strong>about me</strong></a>.</h4>
+        <div class='skills'>
+          <div class='skills__container'>
+            <div class='skills__block'>
+              <h2 class='skills__header'>Languages</h2>
+              <ul>
+                <li><h4>Javascript ES6 + ES5 + ES3</h4></li>
+                <li><h4>HTML + HTML5</h4></li>
+                <li><h4>CSS + CSS3 + Sass</h4></li>
+                <li><h4>UI/UX Design</h4></li>
+              </ul>
+            </div>
+            <div class='skills__block'>
+              <h2 class='skills__header'>Frameworks/Libraries/Tools</h2>
+              <ul>
+                <li><h4>React + Redux</h4></li>
+                <li><h4>Node</h4></li>
+                <li><h4>Vanilla JS</h4></li>
+                <li><h4>Webpack + NPM + Gulp</h4></li>
+                <li><h4>Git</h4></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -162,9 +223,6 @@
             </div>
             <div class='work__image-cell'>
               <img class='work__image box-shadow box-shadow--hover' src='images/coyote/web-recommended-loads.png' data-action='zoom' alt='Coyote Web Recommended Loads View' />
-            </div>
-            <div class='work__image-cell'>
-              <img class='work__image box-shadow box-shadow--hover' src='images/coyote/web-accounting.png' data-action='zoom' alt='Coyote Web Accounting View' />
             </div>
           </div>
         </div>

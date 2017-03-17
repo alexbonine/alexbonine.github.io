@@ -34,20 +34,22 @@ a:hover {
 }
 
 h1,
+h2,
 h3,
 p {
   margin: 0;
 }
 
-h1 { font-size: 36px; }
-h4 { font-size: 24px; margin: 1.33em 0; }
+h1 { font-size: 2.25em; }
+h2 { font-size: 1.5em; }
+h4 { font-size: 1.33em; margin: .5em 0; }
 
 strong {
-  color: #F7B733;
+  color: #382C63;
 }
 
 a strong {
-  border-bottom: 1px solid #FC4A1A;
+  border-bottom: 1px solid #382C63;
   position: relative;
   transition: all .25ms ease-out;
 }
@@ -57,7 +59,7 @@ a strong:after {
   position: absolute;
   left: 0;
   bottom: -1px;
-  background-color: #FC4A1A;
+  background-color: #382C63;
   height: 2px;
   width: 0;
   -moz-transition: all 250ms ease-out;
