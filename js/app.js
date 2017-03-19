@@ -40,21 +40,22 @@ function introScroll () {
   var thirdHeight = windowHeight / 3;
   var halfHeight = windowHeight / 2;
   var twoThirdHeight = thirdHeight * 2;
+  var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
 
-  if (document.body.scrollTop <= thirdHeight) {
+  if (scrollTop <= thirdHeight) {
     introBlocks[0].style.opacity = 1;
     introBlocks[1].style.opacity = 0;
-  } else if (document.body.scrollTop > thirdHeight && document.body.scrollTop <= halfHeight) {
+  } else if (scrollTop > thirdHeight && scrollTop <= halfHeight) {
     var diff = halfHeight - thirdHeight;
-    var scrollDiff = document.body.scrollTop - thirdHeight;
+    var scrollDiff = scrollTop - thirdHeight;
     introBlocks[0].style.opacity = 1 - scrollDiff / diff;
     introBlocks[1].style.opacity = 0;
-  } else if (document.body.scrollTop > halfHeight && document.body.scrollTop <= twoThirdHeight) {
+  } else if (scrollTop > halfHeight && scrollTop <= twoThirdHeight) {
     var diff = twoThirdHeight - halfHeight;
-    var scrollDiff = document.body.scrollTop - halfHeight;
+    var scrollDiff = scrollTop - halfHeight;
     introBlocks[0].style.opacity = 0;
     introBlocks[1].style.opacity = scrollDiff / diff;
-  } else if (document.body.scrollTop <= windowHeight * 2) {
+  } else if (scrollTop <= windowHeight * 2) {
     introBlocks[0].style.opacity = 0;
     introBlocks[1].style.opacity = 1;
   } else {
