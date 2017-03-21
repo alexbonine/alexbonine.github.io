@@ -40,6 +40,12 @@ p {
   margin: 0;
 }
 
+body, header, h1, h2, h3, h4, h5, p, strong {
+  font-family: Arial, sans-serif;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+}
+
 h1 { font-size: 2.25em; }
 h2 { font-size: 1.5em; }
 h4 { font-size: 1.33em; margin: .5em 0; }

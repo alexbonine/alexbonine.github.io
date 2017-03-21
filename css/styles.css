@@ -367,6 +367,9 @@ footer {
   -o-transition: all 330ms ease-in-out;
   -ms-transition: all 330ms ease-in-out;
   transition: all 330ms ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .quickhop--show {
@@ -377,11 +380,18 @@ footer {
   overflow: hidden;
 }
 
+.quickhop__container {
+  height: 80vh;
+  width: 80vw;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .quickhop__work,
 .quickhop__about,
 .quickhop__contact {
-  height: 100%;
-  width: 80vw;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -389,8 +399,8 @@ footer {
   flex-direction: column;
 }
 
-.quickhop__work__list {
-
+.quickhop__about {
+  font-size: 1.25em;
 }
 
 .quickhop__work__item {
@@ -530,6 +540,10 @@ footer {
 // helper classes
 .hide {
   display: none;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 .margin-bottom-full {

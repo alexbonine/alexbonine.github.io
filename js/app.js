@@ -8,6 +8,10 @@ function quickhopOpenClick (e) {
 
   var quickhop = document.getElementById(e.currentTarget.dataset.item);
   quickhop.classList.add('quickhop--show');
+  quickhop.children[0].scrollTop = 0;
+
+  var body = document.getElementsByTagName('body')[0];
+  body.classList.add('noscroll');
 }
 
 function quickhopCloseClick (e) {
@@ -20,6 +24,9 @@ function quickhopCloseClick (e) {
 
   var quickhop = document.getElementsByClassName('quickhop--show')[0];
   quickhop.classList.remove('quickhop--show');
+
+  var body = document.getElementsByTagName('body')[0];
+  body.classList.remove('noscroll');
 }
 
 function headerScroll () {
