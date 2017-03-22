@@ -51,23 +51,33 @@ function introScroll () {
 
   if (scrollTop <= thirdHeight) {
     introBlocks[0].style.opacity = 1;
+    introBlocks[0].style.visibility = 'visible';
     introBlocks[1].style.opacity = 0;
+    introBlocks[1].style.visibility = 'hidden';
   } else if (scrollTop > thirdHeight && scrollTop <= halfHeight) {
     var diff = halfHeight - thirdHeight;
     var scrollDiff = scrollTop - thirdHeight;
     introBlocks[0].style.opacity = 1 - scrollDiff / diff;
+    introBlocks[0].style.visibility = 'visible';
     introBlocks[1].style.opacity = 0;
+    introBlocks[1].style.visibility = 'hidden';
   } else if (scrollTop > halfHeight && scrollTop <= twoThirdHeight) {
     var diff = twoThirdHeight - halfHeight;
     var scrollDiff = scrollTop - halfHeight;
     introBlocks[0].style.opacity = 0;
+    introBlocks[0].style.visibility = 'hidden';
     introBlocks[1].style.opacity = scrollDiff / diff;
+    introBlocks[1].style.visibility = 'visible';
   } else if (scrollTop <= windowHeight * 2) {
     introBlocks[0].style.opacity = 0;
+    introBlocks[0].style.visibility = 'hidden';
     introBlocks[1].style.opacity = 1;
+    introBlocks[1].style.visibility = 'visible';
   } else {
     introBlocks[0].style.opacity = 0;
+    introBlocks[0].style.visibility = 'hidden';
     introBlocks[1].style.opacity = 0;
+    introBlocks[1].style.visibility = 'hidden';
   }
 }
 
