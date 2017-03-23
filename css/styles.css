@@ -350,6 +350,10 @@
   padding: 20px;
 }
 
+.work__text {
+  font-size: 1em;
+}
+
 footer {
   padding-top: 40px;
 }
@@ -547,12 +551,32 @@ footer {
   overflow: hidden;
 }
 
+.margin-bottom-half {
+  margin-bottom: 10px;
+}
+
 .margin-bottom-full {
   margin-bottom: 20px;
 }
 
 .padding-top-half {
   padding-top: 10px;
+}
+
+.padding-top-full {
+  padding-top: 20px;
+}
+
+.padding-bottom-full {
+  padding-bottom: 20px;
+}
+
+.divider {
+  border-bottom: 1px solid #FFFFFF;
+  height: 10px;
+  padding-top: 10px;
+  width: 95%;
+  margin: 0 auto;
 }
 
 .box-shadow {

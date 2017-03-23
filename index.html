@@ -28,7 +28,7 @@
     <section class='intro'>
       <div class='intro__block intro__block--default'>
         <div class='wording'>
-          <h4 class='wording__text'>Hello! I'm <strong>Alex Bonine</strong>, a <strong>Front-End Web Developer</strong> with over a <strong>decade of experience</strong> in software. I started on TI-86 calculators, went pro writing satellite communications at <strong>Rockwell Collins</strong> before leading the mobile team at <strong>Coyote Logisitcs</strong>. Now I lead the front-end at <strong>ToutApp</strong>, rewriting the entire stack to use <strong>React</strong> and a <strong>UI component libary</strong>. I am based in San Francisco after years in the Midwest and East Coast and enjoy the wandering the city when the marine layer allows and the world when time allows.</h4>
+          <h4 class='wording__text'>Hello! I'm <strong>Alex Bonine</strong>, a <strong>Front-End Web Developer</strong> with over a <strong>decade of experience</strong> in software. I started on TI-86 calculators, went pro writing satellite communications at <strong>Rockwell Collins</strong> before leading the mobile team at <strong>Coyote Logistics</strong>. Now I lead the front-end at <strong>ToutApp</strong>, rewriting the entire stack to use <strong>React</strong> and a <strong>UI component library</strong>. I am based in San Francisco after years in the Midwest and East Coast and enjoy the wandering the city when the marine layer allows and the world when time allows.</h4>
           <h4 class='wording__text'>Find out more <a href='#about' class='intro__block__link quickhop__link' data-item='about'><strong>about me</strong></a>.</h4>
         </div>
         <!-- <div class='carousel reverse'>
@@ -74,7 +74,7 @@
             <div class='skills__block'>
               <h2 class='skills__header'>Languages</h2>
               <ul>
-                <li><h4>Javascript ES6 + ES5 + ES3</h4></li>
+                <li><h4>JavaScript ES6 + ES5 + ES3</h4></li>
                 <li><h4>HTML + HTML5</h4></li>
                 <li><h4>CSS + CSS3 + Sass</h4></li>
                 <li><h4>UI/UX Design</h4></li>
@@ -133,20 +133,17 @@
           </div>
         </div>
         <div class='work__text-container box-shadow box-shadow--hover' data-action='zoom'>
-          <h3 class='margin-bottom-full'>Senior Front-End Developer</h3>
-          <p class='work__text'>Architected and led adoption of React + Redux front-end and common UI component library.</p>
-          <p class='work__text padding-top-half'>Helped lead refactor of two core web app features, Command Center and Campaigns. Using an urban renewal strategy, React components were integrated into existing BackboneJS app.</p>
           <div class='invisible-container'>
-            <p class='work__text padding-top-half invisible'>Created UI components libray to give our apps common design language, interactions, and styling documented in live coding environment. Developer tools were created to increase productivity.</p>
+            <h2 class='invisible padding-bottom-full'>ToutApp</h2>
           </div>
+          <h3 class='margin-bottom-half'>Senior Front-End Developer</h3>
+          <p class='work__text recede'>Architecting and leading adoption of React + Redux front-end and common UI component library.</p>
+          <p class='work__text padding-top-half recede'>Helping lead the refactoring of two core web app features, Command Center and Campaigns. Using an urban renewal strategy, React components are integrated into the existing Backbone app.</p>
           <div class='invisible-container'>
-            <p class='work__text padding-top-half invisible'>UI components library begun with Gmail Chrome extension to prove out architecture before moving to OWA add-in and into the main web app. A new package now defines the grid used throughout the application. The grid is completely customizable and we are investigating the possibility of open-sourcing.</p>
-          </div>
-          <div class='invisible-container'>
-            <p class='work__text padding-top-half invisible'>Wrote Chrome Extension in React which saw 1.9 million emails sent from Gmail, a 100% increase, within three months.</p>
-          </div>
-          <div class='invisible-container'>
-            <p class='work__text padding-top-half invisible'>Proved out common components architecture by creating Outlook Web add-in.</p>
+            <p class='work__text padding-top-half invisible'>Shortly after joining ToutApp, work begun on revamping the entire front-end stack. The existing Backbone + CoffeeScript web app had become slow and unwieldy. I set to work on architecting our future, choosing React and it's burgeoning eco-system with Redux to manage state and Webpack to build and develop. A common UI components library shared React components and styles across different clients.</p>
+            <p class='work__text padding-top-half invisible'>After proving out the architecture with Gmail &amp; OWA extensions, I joined the team to re-write our first web app feature in React. The Campaigns feature included a lot of interesting problems such as drag-and-drop, text editors, scheduling, and injecting pictures and templates. My next feature has been our homepage, Command Center, where people can manage their tasks for the day while others tackle other parts of the app.</p>
+            <div class='divider invisible'></div>
+            <p class='work__text padding-top-full invisible'><i>Skills: React, ES6, Redux, UI/UX Design, HTML, Sass, Storybook, Webpack, NPM, Git</i></p>
           </div>
         </div>
         <h2 class='work__header--sub'>UI Components Library and Table</h2>
@@ -173,8 +170,20 @@
           </div>
         </div>
         <div class='work__text-container box-shadow box-shadow--hover' data-action='zoom'>
-          <p class='work__text'>Created UI components libray to give our apps common design language, interactions, and styling documented in live coding environment. Developer tools were created to increase productivity.</p>
-          <p class='work__text padding-top-half'>UI components library begun with Gmail Chrome extension to prove out architecture before moving to OWA add-in and into the main web app. A new package now defines the grid used throughout the application. The grid is completely customizable and we are investigating the possibility of open-sourcing.</p>
+          <div class='invisible-container'>
+            <h2 class='invisible padding-bottom-full'>ToutApp</h2>
+            <h3 class='invisible padding-bottom-half'>UI Components Library and Table</h3>
+          </div>
+          <div class='recede-container'>
+            <p class='work__text recede'>Created UI components library to give our apps common design language, interactions, and styling documented in live coding environment. Developer tools were created to increase productivity.</p>
+            <p class='work__text padding-top-half recede'>UI components library begun with Gmail Chrome extension to prove out architecture before moving to OWA add-in and into the main web app. A new package now defines the grid used throughout the application. The grid is completely customizable and we are investigating the possibility of open-sourcing.</p>
+          </div>
+          <div class='invisible-container'>
+            <p class='work__text padding-top-half invisible'>Two major goals of refactoring ToutApp's front-end codebase were code reuse and creating a consistent style. With the launch of my first project, I begun the UI component library. The library contains all the styles and shared React components across ToutApp's clients from Gmail and OWA to our main web and even integrating into Salesforce and our desktop Outlook client. To increase developer productivity, tools and a playground were created. Working with our designer, we have developed living documentation to allow developers and designers to play, re-style, and learn to use the library.</p>
+            <p class='work__text padding-top-half invisible'>Recently, I tackled a new challenge of creating a common grid to be used throughout ToutApp. The solution is flexbox-based and includes features such as sorting, searching across multiple columns, pagination, and filters with data either pre-fetched or hitting an API. We are investigating open-sourcing the project.</p>
+            <div class='divider invisible'></div>
+            <p class='work__text padding-top-full invisible'><i>Skills: React, ES6, Redux, UI/UX Design, HTML, Sass, Storybook, Webpack, NPM, Git</i></p>
+          </div>
         </div>
         <h2 class='work__header--sub'>Gmail &amp; Outlook OWA Extensions</h2>
         <div class='work__image-container'>
@@ -200,9 +209,20 @@
           </div>
         </div>
         <div class='work__text-container box-shadow box-shadow--hover' data-action='zoom'>
-          <p class='work__text'>Wrote Chrome Extension in React which saw 1.9 million emails sent from Gmail, a 100% increase, within three months.</p>
-          <p class='work__text padding-top-half'>Proved out common components architecture by creating Outlook Web add-in.</p>
-
+          <div class='invisible-container'>
+            <h2 class='invisible padding-bottom-full'>ToutApp</h2>
+            <h3 class='invisible padding-bottom-full'>Gmail &amp; Outlook OWA Extensions</h3>
+          </div>
+          <div class='recede-container'>
+            <p class='work__text recede'>Wrote Chrome Extension in React which saw 1.9 million emails sent from Gmail, a 100% increase, within three months.</p>
+            <p class='work__text padding-top-half recede'>Proved out common components architecture by creating Outlook Web add-in.</p>
+          </div>
+          <div class='invisible-container'>
+            <p class='work__text padding-top-half invisible'>The Gmail Chrome extension rewrite was my first project undertaken while at ToutApp. I convinced our CEO to use the project as a proof of concept for a new front-end architecture. After researching and protyping, I choose React with Redux. I had used React on side projects before and liked it's one-way data flow and component nature. jQuery was used to inject the React directly into the Gmail DOM. A UI component library was started to share components across apps. When the extension was released in December 2015, the old version saw one million emails a month. By March 2016, 1.9 million emails were sent.</p>
+            <p class='work__text padding-top-half invisible'>Following the success of the Chrome extension, we decided to see how well the architecture and UI component library sped up the development cycle by creating an Outlook web app (OWA) add-in. When finished, the add-in helped customers use ToutApp from their online Outlook mailbox.</p>
+            <div class='divider invisible'></div>
+            <p class='work__text padding-top-full invisible'><i>Skills: React, ES6, Redux, jQuery, Gulp, Webpack, Git, Chrome Extension, Microsoft Add-in</i></p>
+          </div>
         </div>
       </article>
       <article id='coyote' class='work'>
@@ -236,11 +256,20 @@
           </div>
         </div>
         <div class='work__text-container box-shadow box-shadow--hover' data-action='zoom'>
-          <h3 class='margin-bottom-full'>Lead Mobile Developer and Full-Stack Developer</h3>
-          <p class='work__text'>Led development of CoyoteGO, a cross-platform mobile check-in application for commercial drivers to efficiently 
-find  and manage their loads while cutting call volume to Coyote by 14%. Created customer relationship management  application for Coyote employees to 
-increase customer engagement and monitor the loads of their carriers and customers.</p>
-          <p class='work__text padding-top-half'>Contributed to Coyote’s customer-facing single  page application built from scratch while developling in the full technology stack from the API to business logic to database layers.</p>
+          <div class='invisible-container'>
+            <h2 class='invisible padding-bottom-full'>Coyote Logistics</h2>
+          </div>
+          <h3 class='margin-bottom-half'>Lead Mobile Developer and Full-Stack Developer</h3>
+          <div class='recede-container'>
+            <p class='work__text recede'>Led development of CoyoteGO, a cross-platform mobile check-in application for commercial drivers to efficiently find  and manage their loads while cutting call volume to Coyote by 14%. Created customer relationship management application for Coyote employees to increase customer engagement and monitor the loads of their carriers and customers.</p>
+            <p class='work__text padding-top-half recede'>Contributed to Coyote's customer-facing single  page application built from scratch while developing in the full technology stack from the API to business logic to database layers.</p>
+          </div>
+          <div class='invisible-container'>
+            <p class='work__text padding-top-half invisible'>Upon joining Coyote Logistics, I helped start the mobile development team as I had previous Android experience working with a start-up in Iowa. After prototyping different frameworks, we settle on PhoneGap to allow our small team to develop cross-platform hybrid mobile apps for both Android and IOS. Our first app targeted drivers, allowing them to check-in at locations and get and submit load information. I led client development, managing Android and iOS platforms, as well as supported the back-end services. Within the first year, CoyoteGO had cut down on driver call volume by 14%.</p>
+            <p class='work__text padding-top-half invisible'>Following CoyoteGO, our team worked on features for the main web app built using Backbone and Handlebars on the front-end with C# and .NET on the back-end. Until I used Ionic and Angular to build a prototype employee mobile app to manage customers and loads, eventually becoming our second app, BazMo. Development began on our third, on a customer analytics app.</p>
+            <div class='divider invisible'></div>
+            <p class='work__text padding-top-full invisible'><i>Skills: JavaScript, C#, .NET, PhoneGap, Angular, Android, iOS, Backbone, Handlebars, jQuery</i></p>
+          </div>
         </div>
       </article>
       <article id='superspy' class='work'>
@@ -259,9 +288,20 @@ increase customer engagement and monitor the loads of their carriers and custome
           </div>
         </div>
         <div class='work__text-container box-shadow box-shadow--hover' data-action='zoom'>
-          <h3 class='margin-bottom-full'>Satellite Software Engineer</h3>
-          <p class='work__text'>Four years of diversified experience throughout the software development life-cycle working with satellite communction (SATCOM) software systems for the fifth generation of ARC-210 radios.</p>
-          <p class='work__text padding-top-half'>Led a four-person, multi-disciplinary team as Project manager and Software Lead to add full-duplex functionality to SATCOM waveforms utilized on $300K project.</p>
+          <div class='invisible-container'>
+            <h2 class='invisible padding-bottom-full'>Rockwell Collins</h2>
+          </div>
+          <h3 class='margin-bottom-half'>Satellite Software Engineer</h3>
+          <div class='recede-container'>
+            <p class='work__text recede'>Four years of diversified experience throughout the software development life-cycle working with satellite communication (SATCOM) software systems for the fifth generation of ARC-210 radios.</p>
+            <p class='work__text padding-top-half recede'>Led a four-person, multi-disciplinary team as Project manager and Software Lead to add full-duplex functionality to SATCOM waveforms utilized on $300K project.</p>
+          </div>
+          <div class='invisible-container'>
+            <p class='work__text padding-top-half invisible'>After four amazing years at Virginia Tech, I graduated with a bachelor's degree in Electrical Engineering with a minor in Math and concentration in Satellite Communication (SATCOM). Joining Rockwell Collins, I applied everything I'd learned working on SATCOM waveforms for software-defined radios. My four years at Rockwell Collins included taking multiple radios from requirements and design through implementation and integration all the way to testing.</p>
+            <p class='work__text padding-top-half invisible'>In 2008, I begun my master's degree in Systems Engineering online at Iowa State. It was here that I begun moving towards a project management role. Once graduated and while still being Software Lead, I managed a $300K project and team of four to successfully implement new features.</p>
+            <div class='divider invisible'></div>
+            <p class='work__text padding-top-full invisible'><i>Skills: C++, C#, Project Management, SW/HW Integration, Linux kernal</i></p>
+          </div>
         </div>
       </article>
     </section>
