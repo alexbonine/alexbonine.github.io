@@ -316,12 +316,12 @@
   color: #382C63;
 }
 
-.work__header--sub:first-of-type {
-  margin-top: 0;
-}
+// .work__header--sub:first-of-type {
+//   margin-top: 0;
+// }
 
 .work__image-container {
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
   max-width: 1200px;
 }
 
