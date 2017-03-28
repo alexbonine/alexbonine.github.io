@@ -29,6 +29,14 @@ function quickhopCloseClick (e) {
   body.classList.remove('noscroll');
 }
 
+function zoomableClick (e) {
+  if (e.currentTarget.tagName === 'IMG' && e.currentTarget.dataset.action === 'zoom') {
+    ga('send', 'event', 'Img Click', e.currentTarget.dataset.section, e.currentTarget.src);
+  } else if (e.currentTarget.tagName === 'DIV' && e.currentTarget.dataset.action === 'zoom') {
+    ga('send', 'event', 'Div Click', e.currentTarget.dataset.section, e.currentTarget.dataset.id);
+  }
+}
+
 function headerScroll () {
   var scrolled = document.getElementsByClassName('scrolled');
   
@@ -103,5 +111,10 @@ function scrolling () {
   var workItems = document.getElementsByClassName('quickhop__work__link');
   for (var i = 0; i < workItems.length; i++) {
     workItems[i].addEventListener('click', quickhopCloseClick);
+  }
+
+  var zoomables = document.querySelectorAll('[data-action]');
+  for (var i = 0; i < zoomables.length; i++) {
+    zoomables[i].addEventListener('click', zoomableClick);
   }
 })();

@@ -258,8 +258,8 @@
 }
 
 .wording__text {
-  line-height: 1.1em;
-  font-size: 1.1em;
+  font-size: 1.2em;
+  line-height: 1.2em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -273,7 +273,7 @@
   }
 
   .wording__text {
-    font-size: inherit;
+    font-size: 1.25em;
     line-height: 1.5em;
   }
 }
@@ -412,17 +412,38 @@ footer {
 }
 
 .quickhop__work,
-.quickhop__about,
 .quickhop__contact {
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  height: 100%;
 }
 
 .quickhop__about {
-  font-size: 1.25em;
+  font-size: 1.1em;
+  height: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .quickhop__about {
+    font-size: 1.15em;
+    line-height: 1.2em;
+  }
+}
+
+@media only screen and (min-width: 1000px) and (min-height: 700px) {
+  .quickhop__about {
+    height: initial;
+    font-size: 1.25em;
+  }
+}
+
+@media only screen and (min-width: 700px) and (min-height: 750px) {
+  .quickhop__about {
+    height: initial;
+  }
 }
 
 .quickhop__work__item {
@@ -579,6 +600,10 @@ a.white:hover {
 
 .margin-bottom-full {
   margin-bottom: 20px;
+}
+
+.margin-top-full {
+  margin-top: 20px;
 }
 
 .padding-top-half {
