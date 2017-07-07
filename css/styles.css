@@ -580,6 +580,15 @@ footer {
   fill: #55ACEE;
 }
 
+a.white strong {
+  color: #4ABDAC;
+  border-color: #4ABDAC;
+}
+
+a.white strong:after {
+  background-color: #4ABDAC;
+}
+
 a.white:hover {
   opacity: .8;
   color: inherit;
