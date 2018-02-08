@@ -39,11 +39,12 @@ function zoomableClick (e) {
 
 function headerScroll () {
   var scrolled = document.getElementsByClassName('scrolled');
+  var belowThreshold = window.pageYOffset <= 40;
   
-  if (document.body.scrollTop > 40 && scrolled.length === 0) {
+  if (!belowThreshold && scrolled.length === 0) {
     var header = document.getElementsByTagName('header')[0];
     header.classList.add('scrolled');
-  } else if (document.body.scrollTop <= 40 && scrolled.length === 1) {
+  } else if (belowThreshold && scrolled.length === 1) {
     var header = document.getElementsByTagName('header')[0];
     header.classList.remove('scrolled');
   }
